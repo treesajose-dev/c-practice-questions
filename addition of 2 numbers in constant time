@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2, sum;
+
+    // Prompt user for input
+    printf("Enter two integers: ");
+    if (scanf("%d %d", &num1, &num2) != 2) {
+        printf("Invalid input.\n");
+        return 1;
+    }
+
+    // Addition operation takes O(1) constant time
+    sum = num1 + num2;
+
+    // Display the result
+    printf("The sum is: %d\n", sum);
+
+    return 0;
+}
